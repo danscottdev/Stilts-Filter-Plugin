@@ -1,0 +1,35 @@
+{
+
+  "endpoints": [
+
+    {
+      "rest_route_name": "resources",
+      "wp_post_type_slug": "resources",
+      "callback_fn": "stilts_filter_standard",
+      "per_page": 4,
+      "query_args": {
+        "wp_filter_type": "taxonomy",
+        "filter_parameters": [
+          {
+            "rest_parameter" : "resource-types",
+            "wp_filter_field_slug" : "resource-types"
+          },
+          {
+            "rest_parameter" : "resource-audiences",
+            "wp_filter_field_slug" : "resource-audiences"
+          }
+        ]
+      },
+      "result_template": "resources/resources-archive-card"
+    }
+
+  ],
+
+  "pages" : [
+    {
+      "wp_post_type_slug": "resources",
+      "wp_template_file": "template-parts/content-resources.php"
+    }
+  ]
+
+}

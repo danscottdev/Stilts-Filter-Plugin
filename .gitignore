@@ -1,0 +1,4 @@
+plugins/query-monitor
+plugins/wordpress-importer
+themes/stilts-plugin-testing/node_modules
+themes/stilts-plugin-testing/package-lock.json
